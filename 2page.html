@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Blood Bank</title>
+<style>
+
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  background-image: url("1image.jpg");
+
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+</style>
+
+<script type="text/javascript">
+        
+  function f1()
+  {
+
+var select = document.getElementById("selectbox");
+alert(select.options[select.selectedIndex].value)
+
+  }
+  
+  </script>
+
+</head>
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <h1>Enter Your Blood Group</h1>
+
+  <body>
+    <form action="3page.html">
+  <select id="selectbox">
+
+    <option value="You have selected A-">A-</option>
+    <option value="You have selected A+">A+</option>
+    <option value="You have selected B-">B-</option>
+    <option value="You have selected B+">B+</option>
+    <option value="You have selected O+">O+</option>
+    <option value="You have selected O-">O-</option>
+</select><br>
+<button onclick="f1()">Choose Your Blood Group</button>
+</form>
+</div>
+</body>
+</html>
